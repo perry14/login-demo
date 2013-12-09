@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+
+<struts>
+	<!-- 测试用例 -->
+	<package name="MyTest1" namespace="/g" extends="struts-default">
+		<action name="sum" class="com.struts2.FirstAction">
+			<result name="positive">/positive.jsp</result>
+			<result name="negative">/negative.jsp</result>
+		</action>
+	</package>
+	
+	<package name="MyTest" namespace="/" extends="struts-default">
+		<action name="login" class="com.struts2.LoginAction">
+			<result name="success">/login.jsp</result>
+			<result name="failure">/login.jsp</result>
+		</action>
+	</package>
+</struts>
